@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .wa-chat-bg {
+    background-color: #0b141a;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+  
+  .wa-chat-bg-light {
+    background-color: #efeae2;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+
+  .wa-chat-bg-teal {
+    background-color: #e5ddd5;
+    background-image: radial-gradient(rgba(0, 128, 105, 0.08) 1.5px, transparent 0);
+    background-size: 22px 22px;
+  }
+
+  /* WhatsApp bubble tails */
+  .wa-tail-in::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent #202c33 transparent transparent;
+  }
+
+  .wa-tail-in-light::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent #ffffff transparent transparent;
+  }
+
+  .wa-tail-out::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 10px 10px;
+    border-color: transparent transparent transparent #005c4b;
+  }
+
+  .wa-tail-out-light::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 10px 10px;
+    border-color: transparent transparent transparent #d9fdd3;
+  }
+}
+
+/* Custom scrollbar matching WhatsApp Web */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 168, 132, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 168, 132, 0.6);
+}
+
+

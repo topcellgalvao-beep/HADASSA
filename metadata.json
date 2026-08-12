@@ -1,0 +1,6 @@
+{
+  "name": "TopCell Assistência Técnica",
+  "description": "Assistência técnica em celulares e suporte virtual com a assistente Hadassa",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
